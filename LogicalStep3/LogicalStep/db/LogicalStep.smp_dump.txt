@@ -1,0 +1,94 @@
+
+State Machine - |LogicalStep_top|QD1:u0|spi_master_if:spi_master|spi_master_core:inst_spi|spitxstate
+Name spitxstate.spi_etx spitxstate.spi_txactive spitxstate.spi_stx 
+spitxstate.spi_stx 0 0 0 
+spitxstate.spi_txactive 0 1 1 
+spitxstate.spi_etx 1 0 1 
+
+State Machine - |LogicalStep_top|QD1:u0|QD1_sdram_0:sdram_0|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |LogicalStep_top|QD1:u0|QD1_sdram_0:sdram_0|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |LogicalStep_top|QD1:u0|QD1_sdram_0:sdram_0|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |LogicalStep_top|QD1:u0|QD1_sdram_0:sdram_0|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |LogicalStep_top|QD1:u0|QD1_nios2_gen2_0:nios2_gen2_0|QD1_nios2_gen2_0_cpu:cpu|QD1_nios2_gen2_0_cpu_nios2_oci:the_QD1_nios2_gen2_0_cpu_nios2_oci|QD1_nios2_gen2_0_cpu_debug_slave_wrapper:the_QD1_nios2_gen2_0_cpu_debug_slave_wrapper|QD1_nios2_gen2_0_cpu_debug_slave_tck:the_QD1_nios2_gen2_0_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |LogicalStep_top|QD1:u0|egm:egm|LogicalStep_pulse_generator:b2v_inst5|state
+Name state.stopped state.pulse_low state.pulse_high state.reset_count state.off 
+state.off 0 0 0 0 0 
+state.reset_count 0 0 0 1 1 
+state.pulse_high 0 0 1 0 1 
+state.pulse_low 0 1 0 0 1 
+state.stopped 1 0 0 0 1 
+
+State Machine - |LogicalStep_top|QD1:u0|egm:egm|LogicalStep_latency_tracker:b2v_inst4|state
+Name state.update2 state.update state.missed_pulse state.S0R1 state.S0R0 state.S1R02_with_R state.S1R0_with_R state.S1R0 state.S1R1 state.S1RX state.wait4cycle2_with_R state.wait4cycle_with_R state.wait4cycle state.off 
+state.off 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.wait4cycle 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.wait4cycle_with_R 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.wait4cycle2_with_R 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.S1RX 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.S1R1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.S1R0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.S1R0_with_R 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.S1R02_with_R 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.S0R0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.S0R1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.missed_pulse 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.update 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.update2 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |LogicalStep_top|QD1:u0|QD1_audio_i2c_config:audio_i2c_config|s_serial_transfer
+Name s_serial_transfer.STATE_6_POST_READ s_serial_transfer.STATE_5_READ_TRANSFER s_serial_transfer.STATE_4_PRE_READ s_serial_transfer.STATE_3_POST_WRITE s_serial_transfer.STATE_2_WRITE_TRANSFER s_serial_transfer.STATE_1_PRE_WRITE s_serial_transfer.STATE_0_IDLE 
+s_serial_transfer.STATE_0_IDLE 0 0 0 0 0 0 0 
+s_serial_transfer.STATE_1_PRE_WRITE 0 0 0 0 0 1 1 
+s_serial_transfer.STATE_2_WRITE_TRANSFER 0 0 0 0 1 0 1 
+s_serial_transfer.STATE_3_POST_WRITE 0 0 0 1 0 0 1 
+s_serial_transfer.STATE_4_PRE_READ 0 0 1 0 0 0 1 
+s_serial_transfer.STATE_5_READ_TRANSFER 0 1 0 0 0 0 1 
+s_serial_transfer.STATE_6_POST_READ 1 0 0 0 0 0 1 
+
+State Machine - |LogicalStep_top|QD1:u0|QD1_audio_i2c_config:audio_i2c_config|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|s_serial_protocol
+Name s_serial_protocol.STATE_5_STOP_BIT s_serial_protocol.STATE_4_TRANSFER s_serial_protocol.STATE_3_START_BIT s_serial_protocol.STATE_2_RESTART_BIT s_serial_protocol.STATE_1_INITIALIZE s_serial_protocol.STATE_0_IDLE 
+s_serial_protocol.STATE_0_IDLE 0 0 0 0 0 0 
+s_serial_protocol.STATE_1_INITIALIZE 0 0 0 0 1 1 
+s_serial_protocol.STATE_2_RESTART_BIT 0 0 0 1 0 1 
+s_serial_protocol.STATE_3_START_BIT 0 0 1 0 0 1 
+s_serial_protocol.STATE_4_TRANSFER 0 1 0 0 0 1 
+s_serial_protocol.STATE_5_STOP_BIT 1 0 0 0 0 1 

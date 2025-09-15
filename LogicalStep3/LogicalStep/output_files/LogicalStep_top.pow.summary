@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Tue Nov 26 09:17:05 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : LogicalStep_top
+Top-level Entity Name : LogicalStep_top
+Family : MAX 10
+Device : 10M08SAE144C8G
+Power Models : Final
+Total Thermal Power Dissipation : 184.62 mW
+Core Dynamic Thermal Power Dissipation : 10.42 mW
+Core Static Thermal Power Dissipation : 121.15 mW
+I/O Thermal Power Dissipation : 53.05 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

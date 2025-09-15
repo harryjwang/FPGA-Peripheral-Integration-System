@@ -1,0 +1,241 @@
+Flow report for LogicalStep_top
+Tue Nov 26 09:17:16 2024
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Tue Nov 26 09:17:16 2024           ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                      ; LogicalStep_top                                 ;
+; Top-level Entity Name              ; LogicalStep_top                                 ;
+; Family                             ; MAX 10                                          ;
+; Device                             ; 10M08SAE144C8G                                  ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 7,979 / 8,064 ( 99 % )                          ;
+;     Total combinational functions  ; 6,809 / 8,064 ( 84 % )                          ;
+;     Dedicated logic registers      ; 5,515 / 8,064 ( 68 % )                          ;
+; Total registers                    ; 5583                                            ;
+; Total pins                         ; 96 / 101 ( 95 % )                               ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 232,832 / 387,072 ( 60 % )                      ;
+; Embedded Multiplier 9-bit elements ; 6 / 48 ( 13 % )                                 ;
+; Total PLLs                         ; 1 / 1 ( 100 % )                                 ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                                   ;
+; ADC blocks                         ; 0 / 1 ( 0 % )                                   ;
++------------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/26/2024 09:15:33 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; LogicalStep_top     ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                ;
++--------------------------------------+-------------------------------------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                                                                                     ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+-------------------------------------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 79306761369328.173263053304856                                                            ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                                                                      ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                                                                    ; <None>        ; --          ; --             ;
+; ENABLE_SIGNALTAP                     ; On                                                                                        ; --            ; --          ; --             ;
+; FLOW_ENABLE_POWER_ANALYZER           ; On                                                                                        ; Off           ; --          ; --             ;
+; IOBANK_VCCIO                         ; 3.3V                                                                                      ; --            ; --          ; 1A             ;
+; IOBANK_VCCIO                         ; 3.3V                                                                                      ; --            ; --          ; 1B             ;
+; IOBANK_VCCIO                         ; 3.3V                                                                                      ; --            ; --          ; 2              ;
+; IOBANK_VCCIO                         ; 3.3V                                                                                      ; --            ; --          ; 3              ;
+; IOBANK_VCCIO                         ; 3.3V                                                                                      ; --            ; --          ; 4              ;
+; IOBANK_VCCIO                         ; 3.3V                                                                                      ; --            ; --          ; 5              ;
+; IOBANK_VCCIO                         ; 3.3V                                                                                      ; --            ; --          ; 6              ;
+; IOBANK_VCCIO                         ; 3.3V                                                                                      ; --            ; --          ; 7              ;
+; IOBANK_VCCIO                         ; 3.3V                                                                                      ; --            ; --          ; 8              ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                                                        ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                                                         ; --            ; --          ; --             ;
+; MISC_FILE                            ; QD1/synthesis/../QD1.cmp                                                                  ; --            ; --          ; --             ;
+; MISC_FILE                            ; QD1/synthesis/../../QD1.qsys                                                              ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                                                                         ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                                                                         ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                                                                                ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                                                                                ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)                                                    ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)                                                    ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)                                                    ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                                                       ; --            ; --          ; --             ;
+; POWER_DEFAULT_INPUT_IO_TOGGLE_RATE   ; 12.5 %                                                                                    ; 12.5%         ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                                     ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                                                              ; --            ; --          ; --             ;
+; SLD_FILE                             ; QD1/synthesis/QD1.regmap                                                                  ; --            ; --          ; --             ;
+; SLD_FILE                             ; QD1/synthesis/QD1.debuginfo                                                               ; --            ; --          ; --             ;
+; SLD_FILE                             ; db/Lab2_auto_stripped.stp                                                                 ; --            ; --          ; --             ;
+; SLD_INFO                             ; QSYS_NAME QD1 HAS_SOPCINFO 1 GENERATION_ID 1726497084                                     ; --            ; QD1         ; --             ;
+; SLD_NODE_CREATOR_ID                  ; 110                                                                                       ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_CREATOR_ID                  ; 110                                                                                       ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_CREATOR_ID                  ; 110                                                                                       ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_ENTITY_NAME                 ; sld_signaltap                                                                             ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_ENTITY_NAME                 ; sld_signaltap                                                                             ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_ENTITY_NAME                 ; sld_signaltap                                                                             ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_BLOCK_TYPE=AUTO                                                                   ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_DATA_BITS=15                                                                          ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_BITS=15                                                                       ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_BITS=15                                                             ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_NODE_INFO=805334530                                                                   ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_POWER_UP_TRIGGER=0                                                                    ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK=0000000000000000000000000000000000000000000000000000000000000000000000 ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK_LENGTH=70                                                              ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                             ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SEGMENT_SIZE=2048                                                                     ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                                ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_FLOW_USE_GENERATED=0                                                            ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_BITS=11                                                                         ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_BUFFER_FULL_STOP=1                                                                    ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_CURRENT_RESOURCE_WIDTH=1                                                              ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INCREMENTAL_ROUTING=1                                                                 ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL=1                                                                       ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SAMPLE_DEPTH=2048                                                                     ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_IN_ENABLED=0                                                                  ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_PIPELINE=0                                                                    ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_PIPELINE=0                                                                        ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_COUNTER_PIPELINE=0                                                                    ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                      ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                              ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                             ; --            ; --          ; Lab2_LCD       ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_BLOCK_TYPE=AUTO                                                                   ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_DATA_BITS=14                                                                          ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_BITS=14                                                                       ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_BITS=14                                                             ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_NODE_INFO=805334529                                                                   ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_POWER_UP_TRIGGER=0                                                                    ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000  ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK_LENGTH=69                                                              ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                             ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SEGMENT_SIZE=8192                                                                     ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                                ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_FLOW_USE_GENERATED=0                                                            ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_BITS=11                                                                         ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_BUFFER_FULL_STOP=1                                                                    ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_CURRENT_RESOURCE_WIDTH=1                                                              ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INCREMENTAL_ROUTING=1                                                                 ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL=1                                                                       ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SAMPLE_DEPTH=8192                                                                     ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_IN_ENABLED=0                                                                  ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_PIPELINE=0                                                                    ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_PIPELINE=0                                                                        ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_COUNTER_PIPELINE=0                                                                    ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                      ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                              ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                             ; --            ; --          ; Lab2_CLI_AUD1  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_BLOCK_TYPE=AUTO                                                                   ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_DATA_BITS=7                                                                           ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_BITS=7                                                                        ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_BITS=7                                                              ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_NODE_INFO=805334531                                                                   ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_POWER_UP_TRIGGER=0                                                                    ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK=0000000000000000000000000000000000000000000000                         ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK_LENGTH=46                                                              ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                             ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SEGMENT_SIZE=2048                                                                     ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                                ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_FLOW_USE_GENERATED=0                                                            ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_BITS=11                                                                         ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_BUFFER_FULL_STOP=1                                                                    ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_CURRENT_RESOURCE_WIDTH=1                                                              ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INCREMENTAL_ROUTING=1                                                                 ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL=1                                                                       ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SAMPLE_DEPTH=2048                                                                     ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_IN_ENABLED=0                                                                  ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_PIPELINE=0                                                                    ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_PIPELINE=0                                                                        ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_COUNTER_PIPELINE=0                                                                    ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                      ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                              ; --            ; --          ; Lab2_Pbuttons  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                             ; --            ; --          ; Lab2_Pbuttons  ;
+; SOPCINFO_FILE                        ; QD1/synthesis/../../QD1.sopcinfo                                                          ; --            ; --          ; --             ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                                                        ; --            ; --          ; --             ;
+; TIMING_ANALYZER_MULTICORNER_ANALYSIS ; Off                                                                                       ; On            ; --          ; --             ;
+; USE_SIGNALTAP_FILE                   ; Lab2.stp                                                                                  ; --            ; --          ; --             ;
++--------------------------------------+-------------------------------------------------------------------------------------------+---------------+-------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:48     ; 1.0                     ; 5115 MB             ; 00:00:55                           ;
+; Fitter               ; 00:00:22     ; 2.0                     ; 6325 MB             ; 00:00:53                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4718 MB             ; 00:00:01                           ;
+; Power Analyzer       ; 00:00:06     ; 2.9                     ; 5024 MB             ; 00:00:13                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4807 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:05     ; 1.0                     ; 4747 MB             ; 00:00:02                           ;
+; Total                ; 00:01:27     ; --                      ; --                  ; 00:02:06                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; ECE-CPUIO2-05    ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; ECE-CPUIO2-05    ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; ECE-CPUIO2-05    ; Windows 10 ; 10.0       ; x86_64         ;
+; Power Analyzer       ; ECE-CPUIO2-05    ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; ECE-CPUIO2-05    ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; ECE-CPUIO2-05    ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off LogicalStep -c LogicalStep_top
+quartus_fit --read_settings_files=off --write_settings_files=off LogicalStep -c LogicalStep_top
+quartus_asm --read_settings_files=off --write_settings_files=off LogicalStep -c LogicalStep_top
+quartus_pow --read_settings_files=off --write_settings_files=off LogicalStep -c LogicalStep_top
+quartus_sta LogicalStep -c LogicalStep_top
+quartus_eda --read_settings_files=off --write_settings_files=off LogicalStep -c LogicalStep_top
+
+
+

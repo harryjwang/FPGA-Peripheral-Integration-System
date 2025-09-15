@@ -1,0 +1,393 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "lcd_en",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_rw",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_rs",
+					"strict" : false
+				},
+				{
+					"name" : "egm_leds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "egm_leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "egm_leds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "egm_leds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_char1",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_char2",
+					"strict" : false
+				},
+				{
+					"name" : "aud_scl",
+					"strict" : false
+				},
+				{
+					"name" : "aud_dac_dat",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx",
+					"strict" : false
+				},
+				{
+					"name" : "sd_clk",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_a[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_a[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_a[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_a[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_a[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_a[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_a[9]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_a[10]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_a[11]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_ba[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_ba[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_cs_n",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_ras_n",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_cas_n",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dqm[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dqm[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_we_n",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_d[0]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_d[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_d[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_d[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_d[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_d[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_d[6]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_d[7]",
+					"strict" : false
+				},
+				{
+					"name" : "aud_sda",
+					"strict" : false
+				},
+				{
+					"name" : "sd_cmd",
+					"strict" : false
+				},
+				{
+					"name" : "sd_dat3",
+					"strict" : false
+				},
+				{
+					"name" : "sd_dat0",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[9]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[10]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[11]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[12]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[13]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[14]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[15]",
+					"strict" : false
+				},
+				{
+					"name" : "clkin_50",
+					"strict" : false
+				},
+				{
+					"name" : "aud_dac_lrck",
+					"strict" : false
+				},
+				{
+					"name" : "aud_bclk",
+					"strict" : false
+				},
+				{
+					"name" : "sw[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "pb_n[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pb_n[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pb_n[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pb_n[2]",
+					"strict" : false
+				},
+				{
+					"name" : "aud_adc_lrck",
+					"strict" : false
+				},
+				{
+					"name" : "aud_adc_dat",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
